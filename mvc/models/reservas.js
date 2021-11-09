@@ -8,10 +8,9 @@ var ReservasSchema = new mongoose.Schema({
   date: {type: Date},
   document: {type: Number, required: true},
   name: { type: String, required: true, lowercase: true },
-  phoneNumber: { type: Number, max: 10 },
+  phoneNumber: { type: Number},
   status: { type: Boolean, default: false },
-  updated_at: { type: Date, default: Date.now() },
-  user_created: { type: Schema.Types.ObjectId, ref: "reservas" },
+  updated_at: { type: Date, default: Date.now() }
 });
 
 module.exports = mongoose.model("reservas", ReservasSchema);
