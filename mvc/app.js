@@ -4,7 +4,7 @@ http = require('http').Server(app),
 bodyParser = require('body-parser'),
 cors = require('cors'),
 config = require('./config/config'),
-db = require("./database/database"),
+db = require("./database/database")
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())

@@ -1,6 +1,6 @@
 const ctrlReserva = {},
   mongoose = require("mongoose"),
-  Reserva = require("../models/reservas"),
+  Reserva = require("../models/reservas")
 
 ctrlReserva.create = async (req, res) => {
   const newReserva = new Reserva({
